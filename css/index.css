@@ -1,0 +1,902 @@
+/*通过@规则引用reset.css文件*/
+@import "reset.css";
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('../font/iconfont.eot');
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+        url('../font/iconfont.woff2') format('woff2'),
+        url('../font/iconfont.woff') format('woff'),
+        url('../font/iconfont.ttf') format('truetype'),
+        url('../font/iconfont.svg#iconfont') format('svg');
+   }
+   .iconfont {
+    font-family: "iconfont" !important;
+    font-size: 12px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #6c6c6c;
+   }
+body {
+    color: #3c3c3c;
+    background-color: #f4f4f4;
+    font-size: 12px;
+}
+/* 头部信息开始 */
+.header {
+    height: 35px;
+    background-color: #f5f5f5;
+}
+.header {
+    height: 35px;
+    line-height: 35px;
+}
+.header li {
+    float: left;
+    font-size: 12px;
+    padding: 0 6px;
+}
+.header a {
+    color: #6c6c6c;
+}
+.header a:hover {
+    color: #f40;
+}
+.header .login {
+    margin-right: 7px;
+}
+/* 头部信息结束 */
+
+/* 头部广告开始 */
+.headAd {
+    height: 100px;
+    background-color: #d23e25;
+}
+.headAd .logo {
+    position: relative;
+}
+/* 左侧logo开始 */
+.headAd .fl img {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+    position: absolute;
+    left: 0;
+}
+/* 左侧logo结束 */
+
+/* 右边活动图文开始 */
+.list a {
+    float: left;  
+    position: relative; 
+}
+.list .item1 {
+    background: url(../img/ad1.png) no-repeat;
+    margin: 12px 10px 0 0; 
+    width: 209px;
+    height: 75px;
+}
+.item2 {
+    background: url(../img/ad2.png) no-repeat;
+    margin: 12px 10px 0 0; 
+    width: 209px;
+    height: 75px;
+}
+.item3 {
+    background: url(../img/ad3.png) no-repeat;
+    margin: 12px 10px 0 0; 
+    width: 209px;
+    height: 75px;
+}
+.item4 {
+    background: url(../img/ad4.png) no-repeat;
+    margin: 12px 10px 0 0; 
+    width: 209px;
+    height: 75px;
+}
+.item5 {
+    background: url(../img/ad5.png) no-repeat;
+    margin: 12px 0; 
+    width: 209px;
+    height: 75px;
+}
+.list img {
+    display: block;
+    width: 53px;
+    height: 52px;
+    border-radius: 5px;
+    position: absolute;
+    top: 12px;
+    right:12px;
+}
+.list .text {
+    width: 90px;
+    line-height: 28px;
+    height: 28px;
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+.list .subtitle {
+    line-height: 20px;
+    height: 16px;
+    font-size: 14px;
+    color: #fff;
+    position: absolute;
+    top: 43px;
+    left: 10px;
+}
+/* 右边活动图文结束 */
+/* 头部广告结束 */
+
+/* 头部搜索开始 */
+.headSearch {
+    background-color: #FFF;
+    padding: 24px 0 9px 0;
+    height: 97px;
+    position: relative;
+}
+/* 左边动图logo开始 */
+.topSearch {
+    width: 1190px;
+    height: 190px;
+    margin: auto;
+}
+.topSearch h1 a {
+    background: url(../img/search_log.gif) no-repeat;
+    display: block;
+    width: 190px;
+    height: 121px;
+    /* 首行缩进,以图换字的方案*/
+    text-indent: -9999px;     
+    overflow: hidden;
+    position: absolute;
+    top: 9px;
+}
+/* 左边动图logo结束 */
+
+/* 中间搜索框开始 */
+.search-wrap {
+    width: 630px;
+    height: 87px;
+    margin-left: 260px;
+    position: relative;
+}
+.searchTab {
+    width:120px;
+    margin-left: 15px;
+}
+.searchTab li {
+    float: left;
+    width: 36px;
+    height: 22px;
+    margin-right: 4px;
+    line-height: 22px;
+    text-align: center;
+    color: #f40;
+    cursor: pointer;
+}
+.searchTab li.active{
+    color: #fff;
+    font-weight: bold;  /*字体加粗*/
+    border-radius: 6px 6px 0 0; /* 圆角上右下左*/  	
+    /*渐变*/
+    background-image: linear-gradient(to right,#ff9000,#ff5000);
+}
+.searchTab li:hover{
+    background-color: #ffeee5;
+}
+/* 中间搜索框结束 */
+
+/* input搜索栏开始 */
+.search_mid {
+    width: 650px;
+    height: 40px;
+    position: relative;    
+}
+.search_mid input {
+    box-sizing: border-box;
+    border: 2px solid #ff5000;
+    border-right: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 570px;
+    height: 40px;  
+    text-indent: 10px;
+    /*input文字被覆盖的解决方案*/
+  	position: absolute;
+  	z-index: 2;
+    /* 透明,为了能看到后面的文字 */
+    background-color: transparent;   
+}
+.search_mid button {
+    width: 69px;
+    height: 40px;
+    text-align: center;
+  	font-size: 18px;
+  	line-height: 40px;
+  	color: #fff;
+  	border: none;
+  	background-image: linear-gradient(to right,#ff9000,#ff5000);
+    border-radius: 0 20px 20px 0;
+    position: absolute;
+    top: 0;
+    left: 570px;  
+}
+.inner {
+    text-indent: 15px;
+    height: 24px;
+    line-height: 24px;
+    width: 560px;
+    color: #ccc;
+    font-size: 16px;
+    position: absolute;
+    top: 8px;
+}
+.hotKey {
+    height: 25px;
+    line-height: 25px;
+    margin-left: 10px;
+}
+.hotKey a:hover{
+    color: #f50;
+}
+.hotKey .c5 {
+    color: #f50;
+}
+/* input搜索栏结束 */
+
+/* 右边淘宝二维码开始 */
+.code {
+    width: 72px;
+    height: 86px;
+    border: 1px solid #eee;
+    position: relative;       
+    text-align: center;
+    margin-right: 100px;
+    margin-top: -85px;
+}
+.code img {
+    width: 62px;
+    height: 62px;
+}
+span.close {
+    position: absolute;
+    left:-16px ;
+    top: -1px; 	
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    font-size: 14px;
+    border: 1px solid #eee;
+    color: #ddd;
+    cursor: pointer;
+}
+.code .c5 {
+    color: #f50;
+}
+/* 右边淘宝二维码结束 */
+
+/* 导航栏开始 */
+.nav {
+    color: #fff;
+    height: 30px;
+    line-height: 30px;
+}
+.nav h2 {
+    width: 190px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #ff5000;
+}
+.nav ul {
+    width: 1000px;
+    height: 30px;
+    /* 颜色渐变 */
+    background-image: linear-gradient(to right,#ff9000,#ff5000); 
+}
+.nav li {
+    float: left;
+    padding: 0 10px;
+    font-weight: 700;
+}
+.nav a {
+    font-size: 16px;
+    color: #fff;
+}
+/* 导航栏结束 */
+
+/* 首屏内容开始 */
+/* 左边一大块内容开始 */
+.main-inner {
+    width: 890px; 
+}
+/* 侧边导航栏开始 */
+.inner-nav {
+    width: 190px;
+  	height: 522px;
+  	background: #fff;
+  	border: 1px solid #ff5000;     
+  	/*由于盒模型边框线与上面主题市场无法对齐*/
+  	box-sizing: border-box;
+  	border-top: none;
+  	padding-top: 5px;
+}
+.inner-nav li {
+    height: 32px;
+  	line-height: 32px;
+  	padding-left: 25px;
+  	font-size: 14px;  	
+    transition: background-color 0.3s;   /*hover背景色过渡*/
+}
+.inner-nav li:hover {
+    background: #ffe4dc; 
+}
+.inner-nav li:hover a {
+    color: #f40;
+}
+.inner-nav li a:hover{
+    text-decoration: underline;   /*点上去有下划线*/
+}
+.inner-nav li a {
+    font-weight: 400;
+    color: #666;
+}
+.main-inner .inner-nav li span {
+    font-size: 12px;
+    color: #999;
+    margin-right: 5px;
+}
+/* 侧边导航栏结束 */
+
+/* 上面图片容器开始 */
+.img1Box {
+    /* width: 690px; */
+    margin-top: 10px;
+    margin-left: 10px;
+}
+/* 左边轮播图开始 */
+/* 相框 */
+#screen {
+    width: 520px;
+    height: 280px;
+    overflow: hidden;
+    position: relative;
+}
+.pic ul {
+    width: 3120px;
+    height: 280px;
+    position: absolute;
+}
+.pic li {
+    width: 520px;
+    height: 280px;
+    float: left;
+    /* white-space: nowrap; */
+    /* display: inline-block; */
+}
+.img1Box li .img {
+    width: 520px;
+    height: 280px;
+}
+.img1Box .img button {
+    width: 20px;
+  	height: 30px;
+  	line-height: 30px;
+  	color: #fff;
+  	cursor: pointer;
+  	border: none;
+  	background-color: rgba(0,0,0,0.3);
+  	position: absolute;
+  	top: 50%;
+  	margin-top: -15px;  	
+  	display: none; /*只有hover时候才显示出来*/
+}
+.img1Box .img:hover button {
+    display: block;
+}
+.img1Box .leftBtn {
+    left: 0;
+  	border-radius: 0 15px 15px 0;
+}
+.img1Box .rightBtn {
+    right: 0;
+  	border-radius: 15px 0 0 15px;
+}
+.pic .circle {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    margin-left: -35px;
+    border-radius: 10px;
+    padding: 3px 0;
+    font-size: 0;
+    background-color: rgba(255,255,255,0.3);
+}
+.pic .circle .active {
+    background-color: #ff5000;
+}
+.pic .circle span {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%; /*会变成圆*/
+    background-color: #fff;
+    margin: 0 3px;
+    cursor: pointer;
+}
+/* 左边轮播图结束 */
+
+/* 右边酒水广告开始 */
+.img1Box .ad {
+    margin-left: 10px;
+}
+/* 右边酒水广告结束 */
+/* 上面图片容器结束 */
+
+/* 下面图片容器开始 */
+.main-inner .img2Box {
+    width: 690px;
+    height: 220px;
+    /*background: #ccc;*/
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.img2Box .picTitle {
+    height: 20px;
+}
+.img2Box .picTitle .text {
+    height: 17px;
+    line-height: 17px;
+}
+.picTitle .text .bg {
+    background: url(../img/tianmaoTitle.png) no-repeat left;
+    padding-left: 136px;
+    color: #666;
+}
+.picTitle .text i {
+    color: #ff1648;
+}
+.img2Box .picTitle .line {
+    height: 3px;
+    background-color: #ff2648;
+    position: relative;   /*父级相对定位*/
+}
+.picTitle .line span {
+    position: absolute;
+    left: 0;
+    width: 87px;
+    height: 3px;
+    background-color: #000; 
+}
+
+.img2Box .img {
+    width: 520px;
+    height: 200px;
+    background-color: #fff;
+    position: relative;
+    /*弹性盒模型  使图片水平和垂直居中(兼容IE10+)*/
+    display: flex;
+  	justify-content: space-around;
+  	align-items: center;   
+}
+
+.img2Box .ad .title {
+    height: 20px;
+    line-height: 20px;
+}
+.img2Box .leftBtn {
+    width: 20px;
+  	height: 30px;
+  	line-height: 30px;
+  	color: #fff;
+  	cursor: pointer;
+  	border: none;
+  	background-color: rgba(0,0,0,0.3);
+  	position: absolute;
+  	top: 50%;
+  	margin-top: -15px;
+}
+.img2Box .img:hover button{
+    display: block;
+}
+.img2Box .pic button.rightBtn{
+    width: 20px;
+  	height: 30px;
+    line-height: 30px;
+    color: #fff;
+    background-color: rgba(0,0,0,0.3);
+    position: absolute;
+    right: 0;
+    border-radius: 15px 0 0 15px;
+}
+.img2Box .pic button.leftBtn{
+    left: 0;
+    border-radius: 0 15px 15px 0;
+}
+
+/* 下面图片容器结束 */
+
+/* 左下方淘宝头条开始 */
+.news{
+    width: 890px;
+    height: 100px;
+    background: #fff;
+    margin-top: 10px;
+    box-sizing: border-box;
+    padding: 13px 13px 13px 20px;
+}
+.news .hd {
+    margin-top: 15px;
+}
+.news .hd h3 {
+    width: 129px;
+    height: 26px;
+    background: url(../img/tbTopNew.png) no-repeat;
+    text-indent: -9999px;   /*移走文字*/
+    overflow: hidden;
+}
+.news .hd p {
+    color: #999;
+    line-height: 24px;
+}
+.news .newList {
+    width: 680px;
+    position: relative;
+}
+.news .newList img {
+    margin-right: 15px;
+    width: 130px;
+    height: 73px;
+}
+.news .newList h4 {
+    line-height: 28px;
+    font-size: 16px;
+    font-weight: normal;  /*去掉加粗*/
+}
+.news .newList h4 a {
+    color: #333;
+}
+.news .newList h4 a:hover {
+    color: #ff5000;
+}
+.news .newList p {
+    line-height: 18px;
+    font-size: 14px;
+}
+.news .newList p a {
+    color: #999;
+}
+.news .newList .more {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #999;
+}
+.news .newList .more:hover {
+    color: #ff5000;
+}
+/* 左下方淘宝头条结束 */
+/* 左边一大块内容结束 */
+
+/* 右边一小块内容开始 */
+.main .firstRight {
+    width: 290px;
+    margin: 10px 0 0 10px;
+}
+/* 用户信息开始 */
+.firstRight .user {
+    height: 140px;
+    padding-top: 5px;
+    background-image: url(../img/user_bg.png);
+}
+.firstRight .user .avatar {
+    display: block;
+    width: 50px;
+    height: 50p;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;   /*圆角没有给在图片上,给在了父级,圆角没有显示,所以加上hidden,隐藏多余的部分*/
+}
+.firstRight .user .avatar img {
+    width: 50px;
+    height: 50px;
+}
+.firstRight .user .userName {
+    text-align: center;  /*文字水平居中*/
+    line-height: 16px;   /*行高,上下有距离*/
+}
+.firstRight .user .members {
+    text-align: center;
+    font-size: 0;   /*两个a折行了,设置字体大小为0*/
+}
+.firstRight .user .members a {
+    display: inline-block;  /*行列级元素要变块元素*/
+    font-size: 12px;  	  	
+    border-radius: 9px;
+    padding: 0 10px 0 20px;
+    margin: 0 2px;
+  /*background: #ffe4dc;*/
+}
+.firstRight .user .members a.gold {
+    background: #ffe4dc url(../img/ico.png) 0 -572px no-repeat;
+}
+.firstRight .user .members a.club {
+    background: #ffe4dc url(../img/ico.png) 0 -528px no-repeat;
+}
+
+.firstRight .user .btn {
+    text-align: center;  	 	
+}
+.firstRight .user .btn button {
+    width: 75px;
+    height: 25px;
+    line-height: 25px;
+    margin: 12px 2px 0 2px;
+    color: #fff; 
+    font-weight: bold;
+    border-radius:4px;
+    border: none;
+    background-image: linear-gradient(to right,#ff9000,#ff5000);
+}
+.firstRight .user .btn button.login {
+    width: 92px;
+}
+/* 用户信息结束 */
+
+/* 举报信息开始 */
+.firstRight .tipOff {
+    display: block;
+    height: 26px;
+    line-height: 26px;
+    color: #f40;
+    background: #ffe4dc; 
+    text-align: center; 
+}
+.firstRight .tipOff i {
+    font-size: 12px;
+    vertical-align: 1px;
+    position: relative;  /*相对于自身*/
+    left: 30px;
+}
+/* 举报信息结束 */
+
+/* 公告区开始 */
+.firstRight .notice {
+    height: 108px;
+    background-color: #fff;
+}
+.firstRight .notice .title {
+    text-align: center;
+    font-size: 0; /* 去折行间距*/
+    padding-top: 10px;
+}
+.firstRight .notice .title li {
+    display: inline-block;   /* li一行显示*/
+    font-size: 12px;
+    line-height: 20px;
+    padding: 0 4px;
+    margin: 0 10px;
+}
+.firstRight .notice .title li.active {
+    font-weight: bold;
+    border-bottom: 2px solid #f40;
+}
+.firstRight .notice .title li a:hover {
+    color: #f40;
+}
+.firstRight .notice .content {
+    margin: 0 12px;
+    padding-top: 10px;
+}
+.firstRight .notice .content li {
+    height: 25px;
+    line-height: 25px;
+    overflow: hidden;
+    float: left;
+    width: 130px;
+}
+.firstRight .notice .content li.item1 {
+    width: 100%;
+}
+.firstRight .notice .content li a:hover,.firstRight .notice .content .item1 a {
+    color: #ff5000;
+}
+/* 公告区结束 */
+
+/* 图标表格区开始 */
+.firstRight .icon{
+    width: 100%;
+    height: 231px;
+    background-color: #fff;
+    /*定义列宽的算法,fixed的计算方式是根据表格宽度自动计算列宽,每列的宽度为均分整个表格的宽度*/
+    table-layout: fixed;   
+}
+.firstRight .icon  td {
+    border: 1px solid #f4f4f4;
+    text-align: center;
+}
+.firstRight .icon td span {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 0 auto;
+    background: url(../img/Sprite.png) no-repeat;   /*雪碧图*/
+}
+.firstRight .icon td i {
+    line-height: 34px;
+    color: #333;
+}
+.firstRight .icon .item-1 span {
+    background-position: -3px 0;
+}
+.firstRight .icon .item-2 span {
+    background-position: 0 -45px;
+}
+.firstRight .icon .item-3 span {
+    background-position: 0 -90px;
+} 
+.firstRight .icon .item-4 span {
+    background-position: 0 -133px;
+}
+.firstRight .icon .item-5 span {
+    background-position: 0 -175px;
+}
+.firstRight .icon .item-6 span {
+    background-position: 0 -222px;
+}
+.firstRight .icon .item-7 span {
+    background-position: -2px -267px;
+}
+.firstRight .icon .item-8 span {
+    background-position: 0 -px;
+}
+.firstRight .icon .item-9 span {
+    background-position: -1px -310px;
+}
+.firstRight .icon .item-10 span {
+    background-position: 0 -352px;
+}
+.firstRight .icon .item-11 span {
+    background-position: -3px -397px;
+}
+.firstRight .icon .item-12 span {
+    background-position: -3px -440px;
+}
+/* 图标表格区结束 */
+
+/* 阿里APP开始 */
+.firstRight .app {
+    height: 111px;
+    background: #fff; 	
+}
+.firstRight .app .title {
+    height: 30px;
+    line-height: 30px;
+}
+.firstRight .app h3 {
+    font-size: 14px;
+    padding-left: 14px;	
+}
+.firstRight .app a {
+    margin-right: 10px;
+}
+.firstRight .app a:hover {
+    color: #f40;
+}
+.firstRight .app .appIcon {
+    text-align: center;
+    font-size: 0;
+}
+.firstRight .app .appIcon li {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    margin: 0 10px 8px 10px;
+}
+.firstRight .app .appIcon li img {
+    width: 32px;
+    height: 32px;
+}
+/* 阿里APP结束 */
+/* 右边一小块内容结束 */
+/* 首屏内容结束 */
+
+/* 有好货与爱逛街开始 */
+div.buy {
+    height: 658px;
+    margin-top: 10px;
+}
+/* 有好货开始 */
+.goods {
+    width: 590px;
+    height: 658px;
+    background-color: #fff;   
+}
+.goods .head {
+    width: 570px;
+    height: 24px;
+    margin: 20px 0 20px 20px;    
+}
+.goods img {
+    height: 24px;
+}
+.buy i {
+    line-height: 24px;
+    color: #999;
+    font-weight: 400;
+}
+.buy span {
+    font-size: 20px;
+    color: #ccc;
+    position: relative;
+    top: 2px;
+}
+.list-top,.list-buttom {
+    width: 550px;
+    height: 299px;
+    margin-left: 20px;
+}
+.buy li {
+    float: left;
+}
+.buy li img {
+    width: 180px;
+    height: 180px;
+}
+.goods li h4 {
+    font-size: 16px;
+    height: 28px;
+    line-height: 28px;
+    font-weight: normal;;
+}
+.buy li a:hover {
+    color: #f40;
+} 
+.buy li p {
+    height: 24px;
+    width: 180px;
+    text-align: center;
+    line-height: 24px;
+    font-size: 14px;
+    overflow: hidden; /*文字太长了*/
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.buy  li .text a {
+    color: #999;
+} 
+.buy .comment {
+    display: block;
+    width: 170px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 12px;
+    color: #35b1ff;
+    margin-top: 12px;
+}  
+.buy li .comment span {
+    font-size: 14px;
+    margin-right: 4px;
+}
+.buy .middle {
+    margin: 0 5px 0 5px;
+}
+/* 有好货结束 */
+/* 爱逛街开始 */
+.shopping {
+    width: 590px;
+    height: 658px;
+    background-color: #fff;  
+    margin-left: 10px;   
+}
+.shopping .comment  {
+    margin-top: 40px;
+}
+/* 爱逛街结束 */
+/* 有好货与爱逛街结束 */
+

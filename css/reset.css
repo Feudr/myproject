@@ -1,0 +1,58 @@
+body,p,h1,h2,h3,h4 {
+    margin: 0;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+img {
+    border: blue;
+    vertical-align: middle;
+}
+a {
+    text-decoration: none;  /*去除自带下划线*/
+    color: #3c3c3c;         /* 淘宝灰*/
+}
+i {
+    font-style: normal;     /*去除i标签的斜体*/
+}
+input,button {
+    margin: 0;
+    padding: 0; 
+}
+button {
+    outline:none ;
+}
+table {
+    border-collapse: collapse;  /*边框模式*/ 	
+}
+th,td {
+    padding: 0;
+}
+
+/* 网页版心 */
+.layer {
+    width: 1190px;
+    margin: 0 auto;
+}
+.clearfix::after {   /*有浮动就要有清理浮动三件套*/
+    content:"";
+    display: block;
+    clear: both;
+}
+/*预先设置好两个浮动*/
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+
+/* 淘宝字体颜色设置 */
+.header a.c4,.header span.c4 {
+    color: #f40;
+}
+
+
+
